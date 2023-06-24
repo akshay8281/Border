@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 400px;
+            margin: 10px 0;
+        }
+        .box {
+            width: 500px;
+            border-right: solid yellow 20px;
+            border-top: solid red 20px;
+            border-bottom: solid blueviolet 20px;
+            border-left: solid blue 20px;
+            border-radius: 50%;
+        }
+        .solid {
+            border: solid 10px red;
+        }
+        img {
+            border-radius: 50%;
+        }
+        .box-dashed {
+            border: dashed 10px burlywood;
+        }
+
+        .box-dotted {
+            border: dotted 10px burlywood;
+        }
+        .box-inset {
+            /* border: inset 10px rgb(12, 15, 220); */
+            border-image: url(https://picsum.photos/id/237/200/300), 50px;
+            /* border-image: linear-gradient(#f6b73c, #4d9f0c) 30; */
+
+        }
+
+        .box-outset {
+            border: outset 10px rgb(12, 15, 220);
+
+        }
+
+        .box-groove {
+            border: groove 50PX RED;
+        }
+
+        .box-ridge {
+            border: ridge 50PX RED;
+
+        }
+
+        #gradient {
+            width: 200px;
+            border: 30px solid transparent;
+            border-image: url('https://picsum.photos/id/237/200/300') 50;
+            /* border-image: repeating- linear-gradient(45deg, #f33, #3bf, #f33 30px) 60; */
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="gradient"></div>
+    <div class="box"> </div>
+    <div class="solid"> solid
+        <img src="https://picsum.photos/id/237/200/300" alt="">
+    </div>
+    <div class="box-dashed">box-dashed </div>
+    <div class="box-dotted">box-dotted </div>
+    <div class="box-inset">box-inset </div>
+    <div class="box-outset">box-outset </div>
+    <div class="box-groove">box-groove </div>
+    <div class="box-ridge">box-ridge </div>
+
+</body>
+
+</html>
